@@ -125,24 +125,226 @@ img {
   padding: 0 5rem;
   position: relative;
 }
+/* header */
+.header{
+   padding: 2rem 0; 
+   background-image: url(./img/background.jpg);
+   height: 100vh;
+   background-size: cover;
 
-/* .header ul {
-    background-color: var(--clr-semilight);
-    color: var(--clr-light);
-    display: flex;
-    flex-direction: row; 
 }
 .header_wrapper{
-    display: flex;
-    justify-content: space-between;
-} 
- .heade.r_wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--clr-dark);
+  font-size: 3.5rem;
+}
+.header ul{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.header .header_wrapper ul li a{
+   font-weight: 600;
+  color: var(--clr-dark);
+  font-size: 2rem; 
+  border: 2px solid var(--clr-dark);
+}
+.title{
+ height: 4rem;
+ display: grid;
+ place-items: center;
+ margin-top: 30rem;
+}
+.title h1{
+  font-size: 12rem;
+  color: var(--clr-dark);
+}
+.title h3{
+  font-size: 4rem;
+}
+
+  .header .header_wrapper ul li a:hover{
+color: var(--clr-primary);
   }
-  .header ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }  */
+
+
+
+
+/* latest */
+.latest{
+   background-color: var(--clr-semilight);
+padding: 15rem 0;
+}
+.latest h1{
+  display: grid;
+  place-content: center;
+  height: 50rem;
+font-size: 5rem; 
+}
+.latest_wrapper{
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background-color: var(--clr-dark);
+  height: .2rem;  
+}
+
+/* cards */
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   display: flex;
+ justify-content: center;
+ align-items: center;
+  gap: 5rem;
+}
+
+.latest_card{
+  background-color: var(--clr-light);
+  height: 60rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.latest_card img{
+  height: 50rem;
+  width: 50rem;
+  place-content: center;
+}
+.latest_card--content{
+  padding: 1rem;
+}
+.latest_card--content p{
+  display: flex;
+ text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+font-weight: 700;
+}
+.line_section{
+  display: inline-block;
+    position: relative;
+    content: " ";
+    background-color: var(--clr-dark);
+    height: .2rem;  
+  margin-left: 5rem;
+}
+
+/* about */
+.about_wrapper{
+ display: flex;
+ justify-content: space-between;
+ gap: 10rem;
+  align-items: center;
+}
+.banner_left img{
+ width: 150rem;
+gap: 10rem; 
+}
+.banner_right h1{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 7rem;
+font-size: 3rem;
+font-weight: 4rem;
+}
+.banner_right p{
+  text-align: justify;
+  padding: 0 5rem;
+ font-weight: .2rem;
+}
+
+
+
+
+
+/* Subscribe */
+.subscribe{
+  background-color: var(--clr-semilight);
+  height: 50rem;
+  margin-bottom: 20rem;
+}
+.subscribe h1{
+  
+  height: 13rem;
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+}
+.subscribe h2{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+ 
+}
+.subscribe_wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.subscribe_wrapper p{
+background-color: var(--clr-light);
+width: 50rem;
+height: 2.5rem;
+}
+
+.button{
+  display: flex;
+justify-content: center;
+margin-top: 5rem;
+}
+.button {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  /* border: 2px solid var(--clr-dark);
+ padding: 0 5rem;
+font-weight: 700; */
+}
+
+/* footer */
+.footer_wrapper{
+ display: flex;
+  
+   justify-content: space-between; 
+}
+.footer_wrapper ul li {
+display: contents;
+  font-size: 3rem;
+  color: var(--clr-dark);
+}
+.footer_wrapper ul li i{
+  color: var(--clr-dark);
+}
+.footer_wrapper h1{
+font-size: 1.5rem;
+}
+ @media screen and (max-width: 520px){
+  .header_wrapper{
+    display: none; 
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.footer_wrapper {
+
+  flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.footer_wrapper h1{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
